@@ -1,0 +1,145 @@
+*	{
+	margin: 0;
+	}
+
+
+.flex	{
+	display: flex;
+	width: 100%;
+	}
+
+
+body
+	{background: #1a1918;
+	overflow: hidden;
+	}
+
+
+
+
+/*-----NAVIGATION-----*/
+
+.navbar 
+	{ height: 75px;
+	padding-top: 1% vh;
+	padding-bottom: 2% vh;
+	background: #1d1d1c;
+	overflow: auto;
+	float: top;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	
+	ms-overflow-style: none;  
+ 	scrollbar-width: none;
+	}
+
+
+img.headerimg
+	{ width: 4%;
+	display: inline;
+	float: left;
+	padding-left: .5%;
+	overflow: auto;
+	vertical-align: middle;
+	}
+
+.navbar p 
+	{font-family: "Nunito", sans-serif;
+	color: white;
+	vertical-align: center;
+	float: left;
+	padding-top: 2%;
+	}
+
+.navbar a:link 
+	{float: right;
+	text-align: center;
+	padding-top: 2%;
+	padding-left: 1%;
+	padding-right: .5%;
+	color: white;
+	text-decoration: none;
+	font-family: "Nunito", sans-serif;
+	vertical-align: center;
+	 }
+
+@keyframes fade { 
+	from {color: white;}
+	to {color: #ff3788;}
+	}
+
+.navbar a:hover 
+	{float: right;
+	text-align: center;
+	padding-top: 2%;
+	padding-left: 1%;
+	padding-right: .5%;
+	color: #ff3788;
+	text-decoration: none;
+	font-family: "Nunito", sans-serif;
+	vertical-align: center;
+
+	animation-name: fade;
+	animation-duration: .45s;
+	 }
+
+
+*/
+
+
+/*-----BODY-----*/
+
+h1
+	{font-family: "Nunito", sans-serif;
+	color: white;
+	clear: left;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: .5%;
+	}
+
+
+
+
+/*-----INTRODUCTION-----*/
+
+.intro
+	{font-family: "Nunito", sans-serif;
+	color: white;
+	text-align: justify;
+	last-align: left;
+	width: 50%;
+	padding: 8.5%;
+	margin: auto;
+	clear: left;
+	}
+
+.homefeature 
+	{float: left;
+	display: inline-block;
+	max-width: 35% vw;
+	height: auto;
+	}
+
+
+h2
+ 	{text-align: left;
+	}
+
+
+/*-----PLACEHOLDER BODY-----*/
+
+.placeholder
+	{display: inline-block;
+	font-family: "Nunito", sans-serif;
+	color: white;
+	padding-left: .5%;
+}
+
+.decorative
+	{float: right;
+	position: sticky;
+	}
+
+/*Apparently .5% is roughly equal to 10px?? Crazy stuff. I should probably be specifying vh/vw but I have more to do here, so onward and upward with wild abandon I go!!*/

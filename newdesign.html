@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+
+
+<head>
+
+	<meta charset="UTF-8">
+<title>ElspethDesigns</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="csstroubleshoot.css">
+<link rel="stylesheet" href="gridcss.css">
+
+<style>
+    
+{
+    box-sizing: border-box;}
+
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background: #1a1918;
+}
+
+/*originally display:grid*/
+.gridgal {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+ width: 50%;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: flex-start;
+}
+
+.gridgal img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  
+}
+
+.gridgal img:hover {
+  transform: scale(1.03);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px;
+  
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gridgal hr 
+	{border: none;
+	}
+
+
+.flexdiv img {
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  
+}
+
+.flexdiv img:hover {
+  transform: scale(1.03);
+}
+
+
+  </style>
+
+
+</head>
+
+
+
+
+<body>
+
+<div class="flex">
+
+
+<div class="navbar">
+<img class="headerimg" src="images/final_logo.png" alt="" >
+
+
+ <p>ElspethDesigns</p>
+
+<div class="buttons">
+ <a href="design.html">Design</a>  
+ <a href="illustration.html">Illustration</a> 
+ <a href="resume.html">Resume/CV</a> 
+ <a href="index.html">Home</a> 
+</div>
+
+
+</div>
+
+<br>
+<br>
+<div class="carousel">
+<!---CAROUSEL DISPLAY--->
+
+<fz-slider>
+        <div class="btn-container">
+            <button class="prev-slider"></button>
+            <button class="next-slider"></button>
+        </div>
+        <div class="fz-scroll">
+            <div class="fz-item">
+                <div class="fz-content">
+                    <img src="images/bm22.png" alt="">
+
+                </div>
+            </div>
+            <div class="fz-item">
+                <div class="fz-content">
+                    <img src="images/stickmock.jpg" alt="">
+
+                </div>
+            </div>
+            <div class="fz-item">
+                <div class="fz-content">
+                    <img src="images/icedcream.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </fz-slider>
+
+<!---END CAROUSEL DISPLAY--->
+<div class="carouseltext">
+
+<h1 style="font-size:42pt;"><center>Design Work</center></h1><br>
+
+<h2><center>Looking for the right design for your business?</center></h2> 
+<br>
+<p><center>Here at ElspethDesigns, I know that finding the right graphics for your business can be difficult. Don't worry, I'm here to help! Whether you're in need of a logo, fliers, social media posts, ad design, or something else, I'll meet with you one-on-one to give a personalized design experience, and make sure <i>your</i> business has the visuals it needs to succeed!</center></p>
+
+</div>
+
+<br>
+<br>
+
+<!---DESIGN GALLERY--->
+
+<div class="gridgal">
+
+
+<div class="figure item1"><img src="images/np01.png" class="image" alt="" onclick="openLightbox(this)"></div>
+
+  <div class="figure item2"><img src="images/np02.png" class="image" onclick="openLightbox(this)" alt=""></div>
+
+<div class="figure item3"><img src="images/np03.png" class="image" onclick="openLightbox(this)" alt=""></div>  
+
+  <div class="figure item4"><img src="images/np04.png" class="image" onclick="openLightbox(this)" alt=""></div>
+
+<div class="figure item5"><img src="images/np05.png" class="image" onclick="openLightbox(this)" alt=""></div>
+
+  <div class="figure item6"><img src="images/np06.png" class="image" onclick="openLightbox(this)" alt=""></div>
+
+<div class="figure item7"><img src="images/np07.png" class="image" onclick="openLightbox(this)" alt=""></div>
+
+  <div class="figure item8"><img src="images/np08.png" class="image" onclick="openLightbox(this)" alt=""></div> 
+
+</div>
+
+
+<div class="flexdiv">
+
+<div class="figure item19"><img src="images/bm22.png" class="image" onclick="openLightbox(this)" alt=""></div>
+
+<div class="figure item15"><img src="images/icedcream.png" class="image" onclick="openLightbox(this)" alt=""></div>
+
+<div class="figure item9"><img src="images/nlrpr.png" class="image" alt="" onclick="openLightbox(this)"></div>
+
+<div class="figure image10"><img src="images/nlrprmock.jpg" class="image" onclick="openLightbox(this)" alt=""></div>
+</div>
+
+<div class="flexdiv">
+
+<div class="figure item11"><img src="images/reckmock.jpg" class="image" onclick="openLightbox(this)" alt=""></div>
+
+<div class="figure item12"><img src="images/squaremock.jpg" class="image" onclick="openLightbox(this)" alt=""></div>
+
+<div class="figure item13"><img src="images/stickmock.jpg" class="image" onclick="openLightbox(this)" alt=""></div>
+
+<div class="figure item14"><img src="images/mugmock.jpg" class="image" onclick="openLightbox(this)" alt=""></div> 
+
+</div>
+<div class="flexdiv">
+
+<div class="figure item16"><img src="images/bjkt1.png" class="image" onclick="openLightbox(this)" alt=""></div>
+
+<div class="figure item17"><img src="images/bjkt2.png" class="image" onclick="openLightbox(this)" alt=""></div>
+
+<div class="figure item18"><img src="images/bjkt3.png" class="image" onclick="openLightbox(this)" alt=""></div>
+
+
+</div>
+<!---END DESIGN GALLERY--->
+
+<br>
+<br>
+<br>
+
+<div class="placeholder">
+<h2>Like what you see?</h2>
+<br><hr>
+<br>
+<p>If you or your company needs a graphic designer, reach out! Whatever your project, big or small, I'm here to help. You can find me at any of the links below:</p>
+<br>
+<ul>
+	<li><a href="mailto:elspethmgreen@gmail.com">elspethmgreen@gmail.com</a></li>
+	<li><a href="tel:+4697163111">469-716-3111</a></li>
+	<li><a href="https://www.instagram.com/edgylikeabutterknife/">
+		<img src="https://cdn.pnggallery.com/wp-content/uploads/instagram-logo-01.png" style="width:20px; height:auto;vertical-align:middle;" alt=" Instagram Logo">  Instagram</a></li>
+	<li><a href="https://www.facebook.com/profile.php?id=61554653433921"><img src="https://cdn.pnggallery.com/wp-content/uploads/facebook-logo-01.png" style="width:20px; height:auto; vertical-align:middle;" alt="Facebook Logo">  Facebook</a></li>
+</ul>
+</div>
+
+
+
+<img class="decorative" src="images/decorative.png" alt="">
+
+<!---CAROUSEL JAVASCRIPT--->
+
+<script>
+class FzSlider extends HTMLElement {
+    constructor() {
+        super();
+        this.setAttribute('enhanced', true)
+        this.counter = 1;
+
+        this.scrollContainer = this.querySelector('.fz-scroll');
+        this.items = this.scrollContainer.querySelectorAll('.fz-item');
+        this.dimensions = this.getBoundingClientRect();
+    }
+  
+     connectedCallback() {
+       this.normalizeItensWidth();
+       this.eventListeners();
+    }
+
+    eventListeners() {
+        this.addEventListener('click', this.clickHandler);
+        this.addEventListener('touchstart', this.touchStartHandler, { passive: true });
+        this.addEventListener('touchend', this.touchEndHandler, { passive: true });
+    }
+
+    normalizeItensWidth() {
+        this.items.forEach(item => {
+            item.style.width = this.dimensions.width + 'px';
+        })
+    }
+
+    clickHandler(e) {
+        e.stopPropagation();
+        if (e.target.matches('.prev-slider')) this.showPrevSlider();
+        if (e.target.matches('.next-slider')) this.showNextSlider();
+    }
+
+    touchStartHandler(e) {
+        if (e.target.matches('.prev-slider') || e.target.matches('.next-slider')) return
+        this.touchStartX = e.changedTouches[0].pageX;
+    }
+
+    touchEndHandler(e) {
+        if (e.target.matches('.prev-slider') || e.target.matches('.next-slider')) return
+        this.touchEndX = e.changedTouches[0].pageX;
+        if (this.touchStartX > this.touchEndX) this.showNextSlider();
+        if (this.touchStartX < this.touchEndX) this.showPrevSlider();
+    }
+
+    showNextSlider() {
+        if (this.counter < this.items.length) {
+            this.scrollContainer.style.transform = `translateX(-${this.dimensions.width * this.counter}px)`;
+            this.counter++;
+        }
+    }
+
+    showPrevSlider() {
+        if (this.counter > 1) {
+            this.counter--;
+            this.scrollContainer.style.transform = `translateX(-${this.dimensions.width * this.counter - this.dimensions.width}px)`;
+        }
+
+    }
+}
+
+customElements.define('fz-slider', FzSlider);
+
+</script>
+
+<!---GALLERY/LIGHTBOX JAVASCRIPT--->
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Expanded image">
+  </div> 
+
+<script>
+function openLightbox(img) {
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+</script>
+
+
+
+</body>
+
+
+<footer>
+</footer>

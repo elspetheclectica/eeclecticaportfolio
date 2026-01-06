@@ -1,0 +1,380 @@
+*	{
+	margin: 0;
+	}
+
+
+.wrapper 
+	{display: flex;
+	}
+
+
+body
+	{background: #1a1918;
+	}
+
+
+/*-----NAVIGATION-----*/
+
+.navbar 
+	{ height: 75px;
+	padding-top: 1% vh;
+	padding-bottom: 2% vh;
+	background: #1d1d1c;
+	overflow: auto;
+	float: top;
+	position: sticky;
+	top: 0;
+	width: 100% vw;
+	z-index: 100;
+	ms-overflow-style: none;  
+ 	scrollbar-width: none;
+	}
+
+
+img.headerimg
+	{ width: 80px;
+	height: auto;
+	float: left;
+	padding-left: .5%;
+	overflow: auto;
+	vertical-align: middle;
+	}
+
+.navbar p 
+	{font-family: "Nunito", sans-serif;
+	color: white;
+	vertical-align: center;
+	float: left;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	vertical-align: middle;
+	}
+
+
+
+
+.navbar a:link 
+	{float: right;
+	text-align: right;
+	padding-top: 1.5%;
+	padding-left: 1%;
+	padding-right: .5%;
+	color: white;
+	text-decoration: none;
+	font-family: "Nunito", sans-serif;
+	vertical-align: middle;
+	 }
+
+.navbar a {color: white;}
+
+@keyframes fade { 
+	from {color: white;}
+	to {color: #ff3788;}
+	}
+
+.navbar a:hover 
+	{float: right;
+	text-align: center;
+	padding-top: 1.5%;
+	padding-left: 1%;
+	padding-right: .5%;
+	color: #ff3788;
+	text-decoration: none;
+	font-family: "Nunito", sans-serif;
+	vertical-align: middle;
+
+	animation-name: fade;
+	animation-duration: .45s;
+	 }
+
+
+
+
+
+
+
+
+/*-----BODY-----*/
+
+h1
+	{font-family: "Nunito", sans-serif;
+	color: white;
+	clear: left;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: .5%;
+	text-align: left;
+	}
+
+.hero
+	{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero.png");
+	height: 50%;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	clear: left;
+	z-index:-1;
+	}
+
+
+
+/*-----INTRODUCTION-----*/
+
+.intro
+	{font-family: "Nunito", sans-serif;
+	color: white;
+	text-align: justify;
+	last-align: left;
+	width: 50%;
+	padding: 8.5%;
+	margin: auto;
+	
+	}
+
+.homefeature 
+	{float: left;
+	padding-right: 2%;
+	display: inline-block;
+	max-width: 35%;
+	height: auto;
+	vertical-align: middle;
+	}
+
+
+h2
+ 	{text-align: left;
+	}
+
+/*-----PLACEHOLDER BODY-----*/
+
+.placeholder
+	{display: block;
+	font-family: "Nunito", sans-serif;
+	color: #1a1918;
+	background-color: white;
+	border-radius: 8px;
+	padding: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	box-shadow: 2px 2px 5px 5px #000000;
+}
+
+.placeholder a
+	{color: #ff3788;
+	text-decoration: none;}
+
+@keyframes fade2 { 
+	from {color: #ff3788;}
+	to {color: #1a1918;}
+	}
+
+	
+.placeholder a:hover
+	{color: #1a1918;
+	text-decoration: none;
+	animation-name: fade2;
+	animation-duration: .45s;
+	}
+
+.placeholder li
+	{list-style-type: none;
+	}
+
+.decorative
+	{float: right;
+	position: sticky;
+	bottom: 0;
+	z-index:-1;
+	}
+
+/*Apparently .5% is roughly equal to 10px?? Crazy stuff. I should probably be specifying vh/vw but I have more to do here, so onward and upward with wild abandon I go!!*/
+
+
+/*-------RESUME & CV CARD STYLING --------*/
+
+.card
+	{display: flex-block;
+	font-family: "Nunito", sans-serif;
+	color: #1a1918;
+	background-color: white;
+	border-radius: 8px;
+	padding: 4%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	box-shadow: 2px 2px 5px 5px #000000;
+}
+
+.card a
+	{color: #ff3788;
+	text-decoration: none;}
+
+@keyframes fade2 { 
+	from {color: #ff3788;}
+	to {color: #1a1918;}
+	}
+
+	
+.card a:hover
+	{color: #1a1918;
+	text-decoration: none;
+	animation-name: fade2;
+	animation-duration: .45s;
+	}
+
+.card li
+	{list-style-type: none;
+	}
+
+.cardimg
+	{display: inline;
+	float: left;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	justify-content: space-around;
+	
+	}
+
+
+/*-------CAROUSEL DISPLAY-------*/
+
+fz-slider {
+	display: block;
+	max-width: 100vw;
+	margin: auto;
+	position: relative;
+	clear: left;
+}
+
+fz-slider[enhanced] {
+	overflow: hidden;
+}
+
+.fz-scroll {
+	max-width: 100%;
+	height: 600px;
+	padding: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	max-width: inherit;
+	transition: transform .3s ease-in-out;
+	will-change: transform;
+	
+}
+
+.fz-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center
+
+}
+
+.fz-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: inherit;
+	height: 400px;
+	margin: 0 10px 0 10px;
+}
+
+.fz-content img {
+	max-width: 100%;
+	opacity: 0.4;
+}
+
+.btn-container {
+	position: absolute;
+	/* width: 100%; */
+	height: 100%;
+	padding: 0 15px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.btn-container button {
+	background: rgb(0, 255, 206);
+	width: 25px;
+	height: 25px;
+	border: none;
+	border-radius: 100%;
+	outline: none;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.btn-container button:hover {
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1), 0 0 8px 0 rgba(0, 0, 0, .1);
+	background: #ff3788;
+	animation-duration: .45s;
+}
+
+
+.carouseltext
+	{font-family: "Nunito", sans-serif;
+	color: white;
+	text-align: justify;
+	last-align: left;
+	width: 40%;
+	padding: 8.5%;
+	margin: auto;
+
+	position: absolute;
+ 	 top: 35%;
+ 	 left: 50%;
+ 	 transform: translate(-50%, -50%);
+	}
+
+
+/*-------RESUME SOFTWARE ICONS-------*/
+
+.software
+	{display: inline-block;
+	justify-content: space-evenly;
+	padding: 20px;
+}
+
+.software img
+	{height: 30px;
+	width: 30px;
+}
+
+
+/*-------RESUME LIST-------*/
+
+
+.resumelist
+	{text-align: left;
+	display: flex;
+	width: 35%;
+	margin: auto;
+	padding-left: 30px;
+
+} 
+
+.resumelist ul:last-child
+	{text-align-last: center;
+}
+
+.resumelist ul
+	{justify-content: space-around;
+	padding: 0px 0px 8px 0px;
+}
+
+.pink
+	{color: #ff3788;
+	padding-right: 5px;
+}
